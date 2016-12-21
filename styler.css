@@ -1,0 +1,48 @@
+#row1{
+	float:top; 
+}
+#row2{
+	float:top; 
+}
+#row3{
+	float:top; 
+}
+#big{
+	float:top; 
+}
+#r{
+   text-align: left;
+   font-family: "Times New Roman", Times;
+   font-size:2.5em;
+       font-weight: bold;
+}
+#b1{
+   text-align: center;
+   font-family: "Times New Roman",normal;
+   font-size:1.5em;
+   font-weight: italic;
+
+}
+#b2{
+   text-align: center;
+   font-family: "Times New Roman",normal;
+   font-size:1.5em;
+   font-weight: italic;
+
+}
+#x{
+    text-align: left;
+   font-family: "Arial",normal;
+   font-size:1.35em;
+   font-weight: italic;
+   color:blue; 
+
+}
+#O{
+    text-align: left;
+   font-family: "Arial",normal;
+   font-size:1.35em;
+   font-weight: italic;
+   color:red; 
+
+}
