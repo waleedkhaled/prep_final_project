@@ -1,10 +1,10 @@
 var counter=0;
-var x;
+var x1=false;
 var arr=[];
 var arr2=[];
 var arr3=[];
 function change(){
-	if(x!=true){
+	if(x1!=true){
 		if(counter%2!==0 ){
 			document.getElementById('image1').src="2-01.png"
 			arr[0]="o";
@@ -17,13 +17,13 @@ function change(){
 			xWin();
 		}
 		counter++;
-		x=true;
+		x1=true;
 	}
 
 }
-var y;
+var x2=false;
 function change2(){
-	if(y!==true){
+	if(x2!==true){
 		if(counter%2!==0){
 			document.getElementById('image2').src="2-01.png"
 			arr[1]="o";
@@ -36,10 +36,12 @@ function change2(){
 			xWin();
 		}
 	}
-	y=true;
+	x2=true;
 	counter++;
 }
+var x3=false;
 function change3(){
+	if(x3!==true){
 	if(counter%2!==0){
 		document.getElementById('image3').src="2-01.png"
 
@@ -51,9 +53,13 @@ function change3(){
 		arr[2]="x";
 		xWin();
 	}
+}
+	x3=true;
 	counter++;
 }
+var x4=false;
 function change4(){
+	if (x4!==true) {
 	if(counter%2!==0){
 		document.getElementById('image4').src="2-01.png"
 		arr2[0]="o";
@@ -64,9 +70,13 @@ function change4(){
 		arr2[0]="x";
 		xWin();
 	}
+}
+	x4=true;
 	counter++;
 }
+var x5=false;
 function change5(){
+	if(x5!==true){
 	if(counter%2!==0){
 		document.getElementById('image5').src="2-01.png"
 		arr2[1]="o";
@@ -77,10 +87,13 @@ function change5(){
 		arr2[1]="x";
 		xWin();
 	}
+}
+	x5=true;
 	counter++;
 }
-
+var x6=false;
 function change6(){
+	if(x6!==true){
 	if(counter%2!==0){
 		document.getElementById('image6').src="2-01.png"
 		arr2[2]="o"
@@ -91,9 +104,13 @@ function change6(){
 		arr2[2]="x"
 		xWin();
 	}
+}
+	x6=true;
 	counter++;
 }
+var x7=false;
 function change7(){
+	if (x7!==true) {
 	if(counter%2!==0){
 		document.getElementById('image7').src="2-01.png"
 		arr3[0]="o"
@@ -104,9 +121,13 @@ function change7(){
 		arr3[0]="x"
 		xWin();
 	}
+}
+	x7=true;
 	counter++;
 }
+var x8=false;
 function change8(){
+	if (x8!==true) {
 	if(counter%2!==0){
 		document.getElementById('image8').src="2-01.png"
 		arr3[1]="o"
@@ -118,9 +139,13 @@ function change8(){
 		arr3[1]="x"
 		xWin();
 	}
+}
+	x8=true;
 	counter++;
 }
+var x9=false;
 function change9(){
+	if (x9!==true) {
 	if(counter%2!==0){
 		document.getElementById('image9').src="2-01.png"
 		arr3[2]="o"
@@ -130,7 +155,10 @@ function change9(){
 		document.getElementById('image9').src="1-01.png"
 		arr3[2]="x"
 		xWin();
-	}counter++;
+	}
+}
+	x9=true;
+	counter++;
 }
 var c1=0;
 function oWin(){	
@@ -153,8 +181,17 @@ function xWin(){
 }
 function functionRestGame(){
 	arr =[];
-	x=y=undefined;
-
+	arr2=[];
+	arr3=[];
+	x1=false;
+	x2=false;
+	x3=false;
+	x4=false;
+	x5=false;
+	x6=false;
+	x7=false;
+	x8=false;
+	x9=false;
 	document.getElementById('image1').src="b1.png"
 	document.getElementById('image2').src="b1.png"
 	document.getElementById('image3').src="b1.png"
@@ -168,10 +205,20 @@ function functionRestGame(){
 }
 function functionRestGame1(){
 	arr =[];
-	x=y=undefined;
+	arr2=[];
+	arr3=[];
+	x1=false;
+	x2=false;
+	x3=false;
+	x4=false;
+	x5=false;
+	x6=false;
+	x7=false;
+	x8=false;
+	x9=false;
 	c=c1=0;
-	$("#x").html("Player One:"+c);
-	$("#O").html("Player Two:"+c1);
+	$("#x").html("Player One: "+c);
+	$("#O").html("Player Two: "+c1);
 
 	document.getElementById('image1').src="b1.png"
 	document.getElementById('image2').src="b1.png"
